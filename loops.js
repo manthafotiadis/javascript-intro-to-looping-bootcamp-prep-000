@@ -19,14 +19,12 @@ function whileLoop(n){
   return 'done';
 }
 
-
 function doWhileLoop(array){
   function maybeTrue() {
   return Math.random() >= 0.5
 }
+  do {  array.pop();}
+  while (array.length > 0 && maybeTrue());
 
-do {
-  console.log('doo-bee-doo-bee-doo')
-} while array.length > 0 && maybeTrue();
-return doWhileLoop;
+return array;
 }
